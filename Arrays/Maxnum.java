@@ -2,11 +2,12 @@ import java.util.Scanner;
 public class Maxnum {
     public static void main(String[] args)
     {
-    int [] ram= new int[3];
     Scanner sc = new Scanner(System.in);
     int ramsize;
     System.out.print("Enter size");
     ramsize = sc.nextInt();
+    int [] ram= new int[ramsize];
+    
     
     int max = ram[0];
 
