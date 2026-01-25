@@ -5,7 +5,7 @@ public class Minnum {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter Size");
         int ramsize= sc.nextInt();
-        int ramarr[]=new int[ramsize];
+        
 
         for(int i=0; i<ramsize;i++)
         {
