@@ -1,30 +1,26 @@
 import java.util.Scanner;
-public class Maxnum {
-    public static void main(String[] args)
-    {
+public class Maxnum
+{
+  public static void main(String[] args)
+  {
     Scanner sc = new Scanner(System.in);
-    int ramsize;
-    System.out.print("Enter size");
-    ramsize = sc.nextInt();
-    int [] ram= new int[ramsize];
-    
-    
-    int max = ram[0];
+    System.out.println("Enter size");
+    int ramsize = sc.nextInt();
+    int ramarr [] = new int[ramsize];
 
-    for (int i=0; i<ramsize; i++)
+    for(int i=0; i<ramsize; i++)
     {
-       System.out.println("number"); 
-        ram[i] = sc.nextInt();
+      ramarr[i]=sc.nextInt();
     }
+     int max = ramarr[0];
 
-    for (int i=1; i<ram.length; i++) 
-    {
-        if(ram[i]>max)
-        {
-            max=ram[i];
-        }
-    }
-    // System ram ram
-    System.out.println("max"+max);
-    }
+     for(int i=0; i<ramsize; i++)
+     {
+      if(ramarr[i] > max)
+      {
+       max=ramarr[i] ;
+      }
+     }
+     System.out.println("MAX"+max);
+  }
 }
