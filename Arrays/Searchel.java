@@ -2,34 +2,29 @@ import java.util.Scanner;
 public class Searchel {
     public static void main(String[] args)
     {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter Size");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size");
         int ramsize= sc.nextInt();
-        int [] ramarr=new int[ramsize];
+        int ramarr []=new int[ramsize];
 
+        for(int i =0; i<ramsize; i++)
+        {
+            ramarr[i]=sc.nextInt();
+        }
         System.out.println("Enter element");
-        int element= sc.nextInt();
+        int ramel= sc.nextInt();
 
-        for(int i=0; i<ramsize; i++)
+        for(int i =0; i<ramsize; i++)
         {
-         System.out.println("Enter number");
-        ramarr[i]= sc.nextInt();   
-        }
-        boolean found = false;
-        for(int i=0; i<ramarr.length; i++)
-        {
-         if(ramarr[i]==element)
+         if(ramarr[i]==ramel)
             {
-             System.out.println("Element found Index"+i);
-             found = true;
-                break;   
+             System.out.println("matched element"+i);   
             } 
+        else 
+            {
+             System.out.println("no matched element");  
+            }  
         }
-        if(!found)
-        {
-            System.out.println("Element not found");
-        }
-        
     }
 
     
